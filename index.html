@@ -164,7 +164,7 @@
     // 기존 소리 API 테스트(참고용)
     function getSound() {
       const name = document.getElementById('name').value;
-      fetch(`http://localhost:3001/sound/${name}`)
+      fetch(`https://web-1-ombv.onrender.com/sound/${name}`)
         .then((response) => response.json())
         .then((data) => {
           document.getElementById('sound').innerHTML = data.sound || '';
@@ -179,6 +179,7 @@
   </script>
 </body>
 </html>
+
 
 
 
